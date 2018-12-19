@@ -6,19 +6,119 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="css/slick-theme.css"/>
+	<link rel="stylesheet" href="css/slick.css"/>
 </head>
 <body>
 	<header class="valign">
 		<h1 class="title-large">
-		Creativity is to<br> think more efficiently.
+			Creativity is to<br> think more efficiently.
 		</h1>
 		<div class="button-scroll">
 			<span></span>
 		</div>
 	</header>
-	<section>
-		section
-	</section>
+	<section class="filter-wrapper">
+
+		<div class="filter">
+
+<div class="button-group filter-button-group">
+  <button data-filter="*">show all</button>
+  <button data-filter=".branding">branding</button>
+  <button data-filter=".design">design</button>
+  <button data-filter=".print">print</button>
+</div>
+		</div>
+
+		<div class="img-wrapper grid">
+			<div class="grid-item grid-item--width2 branding">
+				<img src="img/1.jpg" alt="bag">
+			</div><!--
+		--><div class="grid-item grid-item--width2 design">
+			<img src="img/2.jpg" alt="bag">
+			</div><!--
+		--><div class="grid-item design print">
+			<img src="img/3.jpg" alt="bag">
+			</div><!--
+		--><div class="grid-item grid-item--width2 branding">
+			<img src="img/4.jpg" alt="bag">
+			</div><!--
+		--><div class="grid-item print">
+			<img src="img/5.jpg" alt="bag">
+			</div><!--
+		--><div class="grid-item branding">
+			<img src="img/6.jpg" alt="bag">
+			</div><!--
+		--><div class="grid-item design">
+			<img src="img/7.jpg" alt="bag">
+			</div><!--
+		--><div class="grid-item grid-item--width2 print">
+			<img src="img/8.jpg" alt="bag">
+		</div>
+
+	</div>
+</section>
+
+<section class="slider">
+
+	<div class="your-class">
+	  <div> 
+	  	<p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora torquent per conubia nostra. "<p>
+
+		<h5>Alex Martin</h5> <h6>Envato Customer</h6>
+	  </div>
+	  <div>2 your content</div>
+	  <div>3 your content</div>
+	  	  <div> 
+	  	<p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora torquent per conubia nostra. "<p>
+
+		<h5>Alex Martin</h5> <h6>Envato Customer</h6>
+	  </div>
+	</div>
+		
+</section>
+
+
+
+
+
+<!-- <script src="js/isotope.pkgd.min.js"></script> -->
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+var $grid = $('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'masonry'
+});
+
+	$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+
+
+// slider
+$(document).ready(function(){
+  $('.your-class').slick({
+    dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1
+  });
+});
+
+
+
+</script>
+
+
+
 
 </body>
 </html>

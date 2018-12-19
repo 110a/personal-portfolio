@@ -55,3 +55,38 @@ header img {
     font-size: 30px;
   }
 }
+/* section filter */
+.filter-wrapper {
+	background-color: #2b2a2a;
+}
+.width {
+	width: 50%;
+}
+.width2 {
+	width: 25%;
+}
+.img-item {
+/*	display: inline-block;
+	vertical-align: top;*/
+}
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }
+/* section slider */
+section.slider {
+	background-image: url('../img/bg1.jpg'); 
+    height: 550px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.your-class.slick-initialized.slick-slider.slick-dotted {
+    height: 550px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding-top: 100px;
+    padding-left: 100px;
+    line-height: 30px;
+    font-style: italic;
+}
+.your-class h5 {
+    color: #0DD3C5;
+}
