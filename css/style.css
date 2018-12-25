@@ -1,5 +1,6 @@
 body {
 	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
 }
 header {
 	background-color: red;
@@ -70,7 +71,11 @@ header img {
 /*	display: inline-block;
 	vertical-align: top;*/
 }
-.grid-item { width: 25%; }
+.grid {
+	width: 100%!important;
+}
+.grid-item { width: 25%; padding: 0 25px;
+		margin-top: 50px;position: relative;}
 .grid-item--width2 { width: 50%; }
 /* section slider */
 section.slider {
