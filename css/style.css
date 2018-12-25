@@ -9,6 +9,7 @@ header {
 	background-position: right top;
 	background-size: cover;
 	position: relative;
+	padding: 0 60px;
 }
 header img {
 	width: 100%;
